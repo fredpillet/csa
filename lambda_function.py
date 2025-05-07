@@ -12,17 +12,6 @@ from weasyprint.text.fonts import FontConfiguration
 import json
 from botocore.exceptions import ClientError
 
-aws_access_key_id = "AKIA475TKMODNDPTLSPB"
-aws_secret_access_key = "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"
-region_name = "us-east-2"
-
-s3_client = boto3.client(
-    's3',
-    aws_access_key_id=aws_access_key_id,
-    aws_secret_access_key=aws_secret_access_key,
-    region_name=region_name
-)
-
 def get_secret(secret_name, region_name):
 
     # Create a Secrets Manager client
