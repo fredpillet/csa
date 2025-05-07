@@ -8,7 +8,7 @@ from logzero import logger
 from modules.process_args import get_validated_arguments, pre_process_args
 from modules.utils import get_available_reports
 from modules.utils import alert_new_release
-from modules.reportgen import ReportGen  # do not remove, needed by pyinstaller
+from modules.reportgen import ReportGen  # do not remove, needed by pyinstaller--
 
 
 def main():
