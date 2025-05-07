@@ -1,1 +1,53 @@
-
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "CNAPP Scan - IaC",
+        "type": "shell",
+        "command": "/Library/Frameworks/Python.framework/Versions/3.12/bin/s1-cns-cli scan iac -d /Users/frederic.pillet/velyo --tag 'tag:velyo'",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": [],
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "shared"
+        }
+      },
+      {
+        "label": "CNAPP Scan - Secret",
+        "type": "shell",
+        "command": "/Library/Frameworks/Python.framework/Versions/3.12/bin/s1-cns-cli scan secret -d /Users/frederic.pillet/velyo --tag 'tag:velyo'",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": [],
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "shared"
+        }
+      },
+      {
+        "label": "CNAPP Scan - Vuln",
+        "type": "shell",
+        "command": "/Library/Frameworks/Python.framework/Versions/3.12/bin/s1-cns-cli scan vuln -d /Users/frederic.pillet/velyo --tag 'tag:velyo'",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": [],
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "shared"
+        }
+      }
+    ]
+  }
