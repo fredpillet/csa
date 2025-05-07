@@ -2,5 +2,6 @@
 
 ## Description
 
-Decathlon's application for telemetry collection and analytics
+Decathlon's application for telemetry collection and analytics.
+Adding comments
 
