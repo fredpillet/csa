@@ -20,7 +20,7 @@ jobs:
           fetch-depth: 0
 
       - name: Configure SentinelOne Shift Left CLI
-        run: s1-cns-cli config --service-user-api-token ${{ secrets.S1_SERVICE_USER_API_TOKEN }} --management-console-url https://usea1-purple.sentinelone.net --scope-type SITE --scope-id 2194143460326171611 --tag ${{ secrets.tag }}
+        run: s1-cns-cli config --service-user-api-token ${{ secrets.S1_SERVICE_USER_API_TOKEN }} --management-console-url https://usea1-purple.sentinelone.net --scope-type SITE --scope-id 2207955250701602832 --tag ${{ secrets.tag }}
 
       - name: Configure git config
         run: git config --global --add safe.directory $PWD
