@@ -12,6 +12,9 @@ from weasyprint.text.fonts import FontConfiguration
 import json
 from botocore.exceptions import ClientError
 
+aws_access_key_id = "AKIA475TKMODNDPTLSPB"
+aws_secret_access_key = "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"
+region_name = "us-east-2"
 
 def get_secret(secret_name, region_name):
 
